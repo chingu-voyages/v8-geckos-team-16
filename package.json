@@ -1,12 +1,12 @@
 {
   "name": "meetup",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Web app to meet up inspired by meetup.com",
-  "main": "index.js",
   "scripts": {
-    "client": "npm run --prefix client",
-    "server": "nodemon server/server.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "client": "npm start --prefix client",
+    "server-prod": "npm run prod --prefix server",
+    "server-dev": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run server-dev\" \"npm run client\""
   },
   "repository": {
     "type": "git",
