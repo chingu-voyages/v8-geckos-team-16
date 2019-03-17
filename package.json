@@ -4,12 +4,17 @@
   "description": "Web app to meet up inspired by meetup.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client": "npm run --prefix client",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/chingu-voyages/v8-geckos-team-16"
   },
   "author": "geckos-team-16",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
 }
