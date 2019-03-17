@@ -20,4 +20,8 @@ npm run server-prod   # runs server with node
 npm run server-dev    # runs server with nodemon
 npm run client        # runs client
 ```
-
+## Eslint
+Check the style with:
+```
+npx eslint [--fix] <directory/or/file>
+```
