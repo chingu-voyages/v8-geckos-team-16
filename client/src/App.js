@@ -14,8 +14,8 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <Navbar />
         <Router>
+          <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/discover" component={Discover} />

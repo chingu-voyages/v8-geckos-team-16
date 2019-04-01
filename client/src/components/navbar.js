@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import { Link } from 'react-router-dom'
 
 class Navbar extends React.Component {
   
@@ -8,8 +8,8 @@ class Navbar extends React.Component {
     return (
       <nav>
         <ul>
-          <li><a href="/"> Home </a></li>
-          <li><a href="/discover"> Discover </a></li>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/discover'>Discover</Link></li>
         </ul>
       </nav>
     )
