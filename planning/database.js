@@ -1,6 +1,6 @@
 
 // ## groups
-export let groups = [
+export const groups = [
   {
     name: 'Standup Comedy Sydney',
     description: 'Meetup group located in Sydney. We wanna have fun and improve our self-confidence and public speaking skills.',
@@ -25,7 +25,7 @@ export let groups = [
 
 
 // ## users
-export let users = [
+export const users = [
   {
     userId: 1234123,
     email: 'test@test.com',
@@ -34,7 +34,7 @@ export let users = [
     salt: 'woi8wnwr89vn',
     description: 'Hi I\'m very passionate about playing the tromp. Furthermore I like carving egg shells and time travelling.'
     image: '/api/users/images/pw8e8p8jp3wejfsdfj.jpg'     // not sure about that
-    groups: [ 'Stand Up Comedy Sydney', '05am Workout', 'It's Tea Time' ],
+    groups: [ 'Stand Up Comedy Sydney', '05am Workout', 'It\'s Tea Time' ],
     nationality: 'Australia',
     signupDate: '2012-04-23T18:25:43.511Z'
   }
