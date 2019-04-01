@@ -5,7 +5,7 @@ class Discover extends React.Component {
   
   render() {
     return (
-      <h1> Discover </h1>
+      <h1> Discover - search for groups or events </h1>
 
     )
   }
