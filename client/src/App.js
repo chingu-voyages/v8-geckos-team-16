@@ -6,6 +6,7 @@ import './App.css';
 import Home from './components/home';
 import Group from './components/group';
 import Discover from './components/discover';
+import Navbar from './components/navbar';
 
 import store from './store.js';
 
@@ -13,6 +14,7 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
+        <Navbar />
         <Router>
           <Switch>
             <Route exact path="/" component={Home} />
