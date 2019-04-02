@@ -10,9 +10,8 @@ const app = express();
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 
-app.get('/', (req, res) => {
-  res.send('<h1>Server is running</h1>');
-});
+
+
 
 // server listens on port 5000
 const port = 5000;
