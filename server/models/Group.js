@@ -31,46 +31,8 @@ const GroupSchema = new mongooe.Schema({
   },
   upcomingEvents: {
     type: [{
-      date: {
-        type: Date,
-        required: true,
-      },
-      location: {
-        type: {
-          street: {
-            type: String,
-            required: true
-          },
-          number: {
-            type: String,
-            required: true
-          },
-          zip: {
-            type: String,
-            required: true
-          },
-          city: {
-            type: String,
-            required: true
-          },
-          country: {
-            type: String,
-            required: true
-          }
-        },
-        required: true
-      },
-      description: {
-        type: String,
-        required: true
-      },
-      members: {
-        type: [{
-          type: Schema.Types.ObjectId,
-          ref: 'User'
-        }],
-        required: true
-      }
+      type: Schema.Types.ObjectId,
+      ref: 'Event'
     }],
     required: true
   }
